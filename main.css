@@ -1,0 +1,145 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,0,0,1) 21%);
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 18px;
+}
+
+nav ul li a{
+    display: inline;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.cart{
+    float: right;
+}
+
+.cart-active{
+    background: white;
+}
+.cart-active a{
+    color: black;
+}
+
+main{
+    margin: 0 auto;
+    width: 600px;
+}
+
+.article{
+    
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+    margin: 5px;
+    width: 200px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: -4px 6px 10px -3px rgba(0,0,0,0.52);
+-moz-box-shadow: -4px 6px 10px -3px rgba(0,0,0,0.52);
+box-shadow: -4px 6px 10px -3px rgba(0,0,0,0.52);
+}
+.article div{
+    padding: 5px 0;
+}
+.article .image img{
+    height: 200px;
+    width:  200px;
+}
+
+.article .title{
+    font-weight: bold;
+    font-size: 18px;
+}
+button{
+    border: 1;
+    border-color: #000000;
+    border-radius: 5px;
+    background: rgb(255, 157, 10);
+    cursor: pointer;
+    padding: 10px;
+}
+
+button .btn-remove{
+    border: 1;
+    border-radius: 5px;
+    background: rgb(255, 10, 10);
+    cursor: pointer;
+    padding: 10px;
+}
+
+#cart-container{
+    width: 400px;
+    background: white;
+    border: solid 1px #000;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: -4px 6px 10px -3px rgba(0,0,0,0.52);
+-moz-box-shadow: -4px 6px 10px -3px rgba(0,0,0,0.52);
+box-shadow: -4px 6px 10px -3px rgba(0,0,0,0.52);
+}
+
+#table .row{
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+#table .row .image{
+    display: inline-block;
+    width: 100px;
+}
+#table .row .info{
+    box-sizing: border-box;
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: top;
+    width: 273px;
+}
+
+#table .row .info .nombre{
+    font-size: 20px;
+    font-weight: bold;
+}
+#table .row .info .botones{
+    padding: 20px 0 0 0;
+}
+
+#table p{
+    font-size: 24px !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rating {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	color: #ffc107; /* Personal choice */
+}
+.rating input {
+	display: none;
+}
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked + label,
+.rating input:checked + label ~ label {
+	color: #ffc107; /* Personal color choice. Lifted from Bootstrap 4 */
+}
